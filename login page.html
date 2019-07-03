@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="save.css">
+  <body>
+  
+  <a href="index.html"><img src="home_button-ID-d10b0bc4-a63e-4897-e666-06b541480ed6.png" width="100" height="50"></a>
+    <div class="loginbox">
+      <img src="avatar.jpeg" class="avatar">
+      <h1>Login Here</h1>
+      <form>
+        <p>Username
+        <input type="text" id="t1" name="" placeholder="Enter Username"></p>
+        <p>Password
+          <input type="password" id="t2" name="" placeholder="Enter password"></p><br>
+            <center><input type="submit" id="t3" name="" value="Login"><br></center>
+            <a href="forgetpassword.html">Forgot Your Password?</a><br>
+              <a href="signup.html">Don't Have an account?</a>
+            </form>
+            <script>
+            document.getElementById("t3").onclick=function validate()
+            {
+                if (document.getElementById("t1").value=="")
+                {
+                    alert("Please provide your Username!");
+                    document.getElementById("t1").focus();
+                    return false;
+                }
+                if (document.getElementById("t2").value=="")
+                {
+                    alert("Please provide your Password!");
+                    document.getElementById("t2").focus();
+                    return false;
+                }
+              }
+</script>
+    </div>
+  </body>
+</head>
+</html>
