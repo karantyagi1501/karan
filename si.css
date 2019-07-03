@@ -1,0 +1,9 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: url(bg-blur.jpg);
+  background-size:cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+}
