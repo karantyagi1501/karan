@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SignUp</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+.wrap{
+	width:350px;
+	margin:auto;
+	background:#ebebe0;
+	margin-top:50px;
+	padding:5px;
+}
+form{
+	padding:10px;
+	font-family: arial;
+	border:1px dotted white;
+}
+h2{
+	text-align: center;
+	background: deepskyblue;
+	color: white;
+	padding:10px;
+	border-radius:10px;
+}
+input{
+	padding:10px;
+	margin:5px;
+	border-radius:5px;
+	border:none;
+}
+input[type=text], input[type=email],input[type=number], input[type=password]{
+	width:90%;
+}
+input[type=submit]{
+	width: 95%;
+	background:deepskyblue;
+	cursor:pointer;
+	font-size:18px;
+	font-weight:bold;
+	color:white;
+}
+input[type=submit]:hover{
+	background: orange;
+}
+select{
+	padding:10px;
+	width:32%;
+	border-radius: 5px;
+}
+</style>
+</head>
+<body>
+
+  <a href="index.html"><img src="home_button-ID-d10b0bc4-a63e-4897-e666-06b541480ed6.png" width="100" height="50"></a>
+<div class="wrap">
+<form>
+<h2>Signup Free For Donors</h2>
+<p><input type ="text" id="t1"  name ="First Name" placeholder="First Name"></p>
+<p><input type ="text" id="t2"  name ="Last Name" placeholder="Last Name"><br></p>
+<p><input type ="text" id="t3"	 name ="Username" placeholder="Username"><br></p>
+<p><input type ="email" id="t4" name ="Email" placeholder="Your Email"><br></p>
+<p><input type ="text" id="t5" name ="Number" placeholder="10 Digit Mobile Number"><br></p>
+<p><input type ="password" id="t6" name ="password" placeholder="Password"><br></p>
+<p><input type ="password" id="t7" name ="Confirm Password" placeholder="Confirm Password"><br></p>
+
+<span style="font-size:18px;">Blood Group:</span>
+<select name="DoBbloodgroup>
+	<option value="select">Select/option>
+	<option value="A+">A+</option>
+	<option value="A-">A-</option>
+	<option value="A1+">A1+</option>
+	<option value="A1-">A1-</option>
+	<option value="A1B+">A1B+</option>
+	<option value="A1B-">A1B-</option>
+	<option value="A2+">A2+</option>
+	<option value="A2-">A2-</option>
+	<option value="A2B+">A2B+</option>
+	<option value="A2B-">A2B-</option>
+	<option value="AB+">AB+</option>
+	<option value="AB-">AB-</option>
+	<option value="B+">B+</option>
+	<option value="B-">B-</option>
+	<option value="O+">O+</option>
+	<option value="O-">O-</option>
+</select><br>
+<span style ="font-size:18px;">Date Of Birth:</span><br>
+<select name="DoBmonth">
+<option>Month</option>
+<option value="january"/>January<option value="february"/>February<option value="march"/>March<option value="april"/>April
+<option value="may"/>May<option value="june"/>June<option value="july"/>July<option value="august"/>August
+<option value="september"/>September<option value="october"/>October<option value="november"/>November<option value="december"/>December
+</select>
+
+<select name="DoBday">
+<option/>Day
+<option value="1"/>1<option value="2"/>2<option value="3"/>3<option value="4"/>4<option value="5"/>5<option value="6"/>6<option value="7"/>7
+<option value="8"/>8<option value="9"/>9<option value="10"/>10<option value="11"/>11<option value="12"/>12<option value="13"/>13<option value="14"/>14
+<option value="15"/>15<option value="16"/>16<option value="17"/>17<option value="18"/>18<option value="19"/>19<option value="20"/>20<option value="21"/>21
+<option value="22"/>22<option value="23"/>23<option value="24"/>24<option value="25"/>25<option value="26"/>26<option value="27"/>27<option value="28"/>28
+<option value="29"/>29<option value="30"/>30<option value="31"/>31
+</select>
+
+<select name="DoByear">
+<option>Year</option>
+<option value="2000-2017">2000-2017</option>
+<option value="1990-1998">1990-1998</option>
+</select>
+<br>
+<input type= "radio" name="Gender" value="male">Male
+<input type= "radio" name="Gender" value="female">Female
+<br>
+<h3/><input type="checkbox">I Agree To the Terms of Use
+<br>
+<center><input type="submit" value="Submit" id="t8">
+</form>
+<script>
+	 document.getElementById("t8").onclick=function validate()
+	 {
+	                if (document.getElementById("t1").value=="")
+	                {
+	                    alert("Please provide your first name!");
+	                    document.getElementById("t1").focus();
+	                    return false;
+	                }
+
+							 if (document.getElementById("t2").value=="")
+							 {
+									 alert("Please provide your Last name!");
+									 document.getElementById("t2").focus();
+									 return false;
+							 }
+
+							                if (document.getElementById("t3").value=="")
+							                {
+							                    alert("Please provide your Username name!");
+							                    document.getElementById("t3").focus();
+							                    return false;
+							                }
+
+														  if (document.getElementById("t4").value=="")
+														   {
+														     alert("Please provide your Email!");
+														         document.getElementById("t4").focus();
+														            return false;
+														   }
+															 if (document.getElementById("t5").value=="")
+									                 {
+									                     alert("Please provide your 10 Digit Mobile Number!");
+									                     document.getElementById("t5").focus();
+									                     return false;
+									                 }
+																	 if (document.getElementById("t6").value=="")
+																                 {
+																                     alert("Please provide your Password!");
+																                     document.getElementById("t6").focus();
+																                     return false;
+																                 }
+																								 if (document.getElementById("t7").value=="")
+																								                 {
+																								                     alert("Please provide your Confirm Password!");
+																								                     document.getElementById("t7").focus();
+																								                     return false;
+																																	 }
+																																 }
+</script>
+</body>
+</div>
