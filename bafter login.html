@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<link href='styles.css' rel='stylesheet'>
+<body>
+<ul>
+             <li><a>Home</a></li>
+             <li><a>Blood groups</a>
+			        <ul>
+			                 <li><a>A+</a></li>
+                             <li><a>B+</a></li>
+                             <li><a>O+</a></li>
+                             <li><a>AB+</a></li>
+                             <li><a>A-</a></li>
+							 <li><a>B-</a></li>
+							 <li><a>O-</a></li>
+							 <li><a>AB-</a></li>
+                    </ul>
+					</li>
+			<li><a>Cities</a>
+			        <ul>
+					         <li><a>Delhi &amp; NCR</a></li>
+                             <li><a>Mumbai</a></li>
+                             <li><a>Hyedrabad</a></li>
+                             <li><a>Kochi</a></li>
+                             <li><a>Kota</a></li>
+							 <li><a>Kolkata</a></li>
+							 <li><a>Chennai</a></li>
+							 <li><a>Chandigarh</a></li>
+							 <li><a>Mamglore</a></li>
+							 <li><a>Lucknow</a></li>
+							 <li><a>Jalandhar</a></li>
+							 <li><a>Jodhpur</a></li>
+							 <li><a>Pune</a></li>
+							 <li><a>Ahemdabad</a></li>
+							 <li><a>Allahabad</a></li>
+							 <li><a>Agra</a></li>
+							 <li><a>Patna</a></li>
+                    </ul></li>
+             <li><a>Availability</a>
+			        <ul>
+			                   <li><a>AB+</a></li>
+                               <li><a>B+</a></li>
+                               <li><a>O+</a></li>
+                               <li><a>O-</a></li>
+                               <li><a>AB-</a></li>
+                    </ul></li>
+							   <li><a>Contact Us</a></li>
+</ul>
+<div class="img">
+
+
+
+<div class="w3-content w3-section" style="max-width:22px">
+  <img class="mySlides" src="login 3 image.jpg" width="1600" height= "721">
+  <img class="mySlides" src="blood what is.jpg" width="1600" height= "721">
+  <img class="mySlides" src="karan.jpg" width="1600" height= "721">
+  <img class="mySlides" src="111317-BloodDrive.jpg" width="1600" height= "721">
+  
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
+
+</body>
+<head>
+</html>
